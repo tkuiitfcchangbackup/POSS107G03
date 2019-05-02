@@ -1,0 +1,5 @@
+1.The purpose of our system Food Come Close(FCC), is to let people get more convenient to find food by the system.  Recently, it seems that many people have difficulty of deciding what to eat for the next meal. So through our system they can solve the problem and also have more choices to find what they want to eat. 
+
+2. Food Come Close(FCC), which provide food classification of restaurants you can see it through the photo on our system and we also provided the service for you to search the different city's delicious foods. Moreover, you can see the discount of those restaurants through our FCC. You can also see a lot of comments of those restaurants and the scores of the restaurants. 
+
+3.html web+restaurants research details 
