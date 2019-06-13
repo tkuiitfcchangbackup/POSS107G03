@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta type="utf-8"></meta>
-	<style>
+	<style type="text/css">
 	.title{
 		font-size:50px;text-align:center;color:black;
 	}
@@ -11,6 +11,18 @@
 	}
 	.introduction{
 		font-size:20px;text-align:center;color:black;
+	}
+	table{
+		border-collapse:collapse;align:center;
+	}
+	td{
+		border-bottom:1px solid black;padding:2px;
+	}
+	tr:nth-child(1){
+		background-color:#E8CCFF;color:black;
+	}
+	tr:nth-child(even){
+		background-color:#FFF0F5;color:black
 	}
 	.home{
 		color:black;font-size:15px;position:absolute;left:300px;top:120px;cursor:pointer;
@@ -93,7 +105,7 @@ $total_records=mysqli_num_rows($result);  // 取得記錄數
 ?>
 </p>
 <br><br><br>
-<table  border="1" align="center">
+<table>
 <tr>
 <td>Location</td>
 <td>Price</td>
