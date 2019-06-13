@@ -57,7 +57,7 @@
 	</style>
 </head>
 <body style="margin:0px;background-color:#FFFAFA">
-	<div class="title"><a href="web.html" style="text-decoration:none;color:black">Food Come Close</a></div>
+	<div class="title"><a href="web.php" style="text-decoration:none;color:black">Food Come Close</a></div>
 	<div class="contant">
 	Welcome to food come close<br/>
 	Hope you can find the restaurant that you want from our website<br/>
@@ -65,11 +65,11 @@
 	<div class="box">
 	<div class="home" id="home"><a href="webhome.html" style="text-decoration:none;color:#A20055">Home</a></div>
 	<div class="hot" id="hot"><a href="webhot.html" style="text-decoration:none;color:#A20055">Hot</a></div>
-	<div class="taipei" id="taipei"><a href="webtaipei.html" style="text-decoration:none;color:#A20055">Taipei</a></div>
-	<div class="hsinchu" id="hsinchu"><a href="webhsinchu.html" style="text-decoration:none;color:#A20055">Hsinchu</a></div>
-	<div class="taichung" id="taichung"><a href="webtaichung.html" style="text-decoration:none;color:#A20055">Taichung</a></div>
-	<div class="tainan" id="tainan"><a href="webtainan.html" style="text-decoration:none;color:#A20055">Tainan</a></div>
-	<div class="kaohsiung" id="kaohsiung"><a href="webkaohsiung.html" style="text-decoration:none;color:#A20055">Kaohsiung</a></div>
+	<div class="taipei" id="taipei"><a href="webtaipei.php" style="text-decoration:none;color:#A20055">Taipei</a></div>
+	<div class="hsinchu" id="hsinchu"><a href="webhsinchu.php" style="text-decoration:none;color:#A20055">Hsinchu</a></div>
+	<div class="taichung" id="taichung"><a href="webtaichung.php" style="text-decoration:none;color:#A20055">Taichung</a></div>
+	<div class="tainan" id="tainan"><a href="webtainan.php" style="text-decoration:none;color:#A20055">Tainan</a></div>
+	<div class="kaohsiung" id="kaohsiung"><a href="webkaohsiung.php" style="text-decoration:none;color:#A20055">Kaohsiung</a></div>
 	</div>
 	<div class="aboutus" id="aboutus"><a href="webaboutus.html" style="text-decoration:none;color:#A20055">About Us</a></div>
 	<div style="position:absolute;left:10px;top:150px"><img src="hsinchu1.jpg" width="300" height="385"></img></div>
