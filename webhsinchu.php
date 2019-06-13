@@ -10,7 +10,7 @@
 		font-size:20px;text-align:center;color:black;
 	}
 	table{
-		border-collapse:collapse;
+		border-collapse:collapse;margin:20px;
 	}
 	td{
 		border-bottom:1px solid black;padding:2px;
