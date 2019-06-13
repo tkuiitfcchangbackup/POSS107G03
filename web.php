@@ -13,7 +13,7 @@
 		font-size:20px;text-align:center;color:black;
 	}
 	table{
-		border-collapse:collapse;align:center;
+		border-collapse:collapse;
 	}
 	td{
 		border-bottom:1px solid black;padding:2px;
@@ -105,7 +105,7 @@ $total_records=mysqli_num_rows($result);  // 取得記錄數
 ?>
 </p>
 <br><br><br>
-<table>
+<table border="1" align="center">
 <tr>
 <td>Location</td>
 <td>Price</td>
