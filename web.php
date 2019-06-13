@@ -13,7 +13,7 @@
 		font-size:20px;text-align:center;color:black;
 	}
 	table{
-		border-collapse:collapse;
+		border-collapse:collapse;width:300px;
 	}
 	td{
 		border-bottom:1px solid black;padding:2px;
