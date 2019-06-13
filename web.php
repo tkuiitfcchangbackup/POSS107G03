@@ -76,35 +76,42 @@
 	<div class="kaohsiung" id="kaohsiung"><a href="webkaohsiung.html" style="text-decoration:none;color:#A20055">Kaohsiung</a></div>
 	</div>
 	<div class="aboutus" id="aboutus"><a href="webaboutus.html" style="text-decoration:none;color:#A20055">About Us</a></div>
-<div class="box">
+
+
+
+
 <p>
 <?php
-$link=mysql_connect("localhost","root","8811") or die ("無法開啟Mysql資料庫連結"); //建立mysql資料庫連結
-mysql_select_db($link, "data"); //選擇資料庫abc
-$sql = "SELECT * FROM data"; //在test資料表中選擇所有欄位
-mysql_query($link, 'SET CHARACTER SET utf8'); // 送出Big5編碼的MySQL指令
-mysql_query($link,  "SET collation_connection = 'utf8_general_ci'");
-$result = mysql_query($link,$sql); // 執行SQL查詢
-//$row = mysql_fetch_assoc($result); //將陣列以欄位名索引
-//$row = mysql_fetch_row($result); //將陣列以數字排列索引
-$total_fields=mysql_num_fields($result); // 取得欄位數
-$total_records=mysql_num_rows($result);  // 取得記錄數
+$link=mysqli_connect("localhost","88user","8811") or die ("無法開啟Mysql資料庫連結"); //建立mysql資料庫連結
+mysqli_select_db($link, "data"); //選擇資料庫data
+$sql = "SELECT * FROM data"; //在data資料表中選擇所有欄位
+mysqli_query($link,'SET CHARACTER SET utf8');	// 送出Big5編碼的MySQL指令
+mysqli_query($link,"SET collation_connection 'utf8'");
+$result = mysqli_query($link,$sql); // 執行SQL查詢
+$total_fields=mysqli_num_fields($result); // 取得欄位數
+$total_records=mysqli_num_rows($result);  // 取得記錄數
 ?>
 </p>
-<table border="1">
+<br><br><br>
+<table  border="1" align="center">
 <tr>
-<td>location</td>
-<td>price</td>
-<td>cp number</td>
+<td>Location</td>
+<td>Price</td>
+<td>Cp Number</td>
 </tr>
-<?php for ($i=0;$i<$total_records;$i++) {$row = mysql_fetch_assoc($result); //將陣列以欄位名索引   ?>
+<?php
+for ($i=0;$i<$total_records;$i++) {$row = mysqli_fetch_assoc($result); //將陣列以欄位名索引
+?>
 <tr>
-<td><?php echo $row[location];   ?></td>        <!–印出id欄位的值–>
-<td><?php echo $row[price];   ?></td> <!–印出name欄位的值–>
-<td><?php echo $row[cp_number]; ?></td>
+<td><?php echo $row[location];?></td>//column name
+<td><?php echo $row[price];?></td>
+<td><?php echo $row[cp_number];?></td>
 </tr>
 <?php    }   ?>
 </table>
-</div>
+
+
+
+
 </body>
 </html>
