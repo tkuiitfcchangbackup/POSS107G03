@@ -115,7 +115,7 @@ $total_records=mysqli_num_rows($result);  // 取得記錄數
 for ($i=0;$i<$total_records;$i++) {$row = mysqli_fetch_assoc($result); //將陣列以欄位名索引
 ?>
 <tr>
-<td><?php echo $row[location];?></td>//column name
+<td><?php echo $row[location];?></td>
 <td><?php echo $row[price];?></td>
 <td><?php echo $row[cp_number];?></td>
 </tr>

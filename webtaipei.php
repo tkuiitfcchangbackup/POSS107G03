@@ -135,7 +135,7 @@ $total_records=mysqli_num_rows($result);  // 取得記錄數
 for ($i=0;$i<$total_records;$i++) {$row = mysqli_fetch_assoc($result); //將陣列以欄位名索引
 ?>
 <tr>
-<td><?php echo $row[resturant_name];?></td>//column name
+<td><?php echo $row[resturant_name];?></td>
 <td><?php echo $row[type];?></td>
 <td><?php echo $row[r_price];?></td>
 <td><?php echo $row[r_cpnumber];?></td>
