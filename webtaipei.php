@@ -13,10 +13,10 @@
 		color:black;font-size:15px;position:absolute;left:300px;top:120px;cursor:pointer;
 	}
 	.hot{
-		color:black;font-size:20px;position:absolute;left:400px;top:120px;cursor:pointer;font-weight:bold;
+		color:black;font-size:15px;position:absolute;left:400px;top:120px;cursor:pointer;
 	}
 	.taipei{
-		color:black;font-size:15px;position:absolute;left:500px;top:120px;cursor:pointer;
+		color:black;font-size:20px;position:absolute;left:480px;top:120px;cursor:pointer;font-weight:bold;
 	}
 	.hsinchu{
 		color:black;font-size:15px;position:absolute;left:600px;top:120px;cursor:pointer;
@@ -72,5 +72,66 @@
 	<div class="kaohsiung" id="kaohsiung"><a href="webkaohsiung.php" style="text-decoration:none;color:#A20055">Kaohsiung</a></div>
 	</div>
 	<div class="aboutus" id="aboutus"><a href="webaboutus.html" style="text-decoration:none;color:#A20055">About Us</a></div>
+	<div style="position:absolute;left:310px;top:150px"><img src="taipei1.jpg" width="300"></img></div>
+	<div style="position:absolute;left:10px;top:150px"><img src="taipei2.jpg" width="300" height="385"></img></div>
+	<div style="position:absolute;left:610px;top:150px"><img src="taipei3.jpg" width="300" height="385"></img></div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<p>
+<?php
+$link=mysqli_connect("localhost","88user","8811") or die ("無法開啟Mysql資料庫連結"); //建立mysql資料庫連結
+mysqli_select_db($link, "data"); //選擇資料庫data
+$sql = "SELECT * FROM taipei"; //在data資料表中選擇所有欄位
+mysqli_query($link,'SET CHARACTER SET utf8');   // 送出Big5編碼的MySQL指令
+mysqli_query($link,"SET collation_connection 'utf8'");
+$result = mysqli_query($link,$sql); // 執行SQL查詢
+$total_fields=mysqli_num_fields($result); // 取得欄位數
+$total_records=mysqli_num_rows($result);  // 取得記錄數
+?>
+</p>
+<br><br><br>
+<table  border="1" align="center">
+<tr>
+<td>Restaurant</td>
+<td>Type</td>
+<td>Price</td>
+<td>CP Number</td>
+<td>Open Time</td>
+<td>Close Time</td>
+</tr>
+<?php
+for ($i=0;$i<$total_records;$i++) {$row = mysqli_fetch_assoc($result); //將陣列以欄位名索引
+?>
+<tr>
+<td><?php echo $row[resturant_name];?></td>//column name
+<td><?php echo $row[type];?></td>
+<td><?php echo $row[r_price];?></td>
+<td><?php echo $row[r_cpnumber];?></td>
+<td><?php echo $row[open_time];?></td>
+<td><?php echo $row[close_time];?></td>
+</tr>
+<?php    }   ?>
+</table>
+
 </body>
 </html>
