@@ -9,6 +9,18 @@
 	.contant{
 		font-size:20px;text-align:center;color:black;
 	}
+	table{
+		border-collapse:collapse;margin:20px;
+	}
+	td{
+		border-bottom:1px solid black;padding:2px;
+	}
+	tr:nth-child(1){
+		background-color:#E8CCFF;color:black;
+	}
+	tr:nth-child(even){
+		background-color:#FFF0F5;color:black
+	}
 	.home{
 		color:black;font-size:15px;position:absolute;left:300px;top:120px;cursor:pointer;
 	}
